@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cdappmazingapp';
+  number!: number;
+  arrNum: number[] = [1, 2, 3, 4, 5];
+  
+  sumNUM(a: number, b: number): number {
+    this.number = a;
+    return a + b;
+  }
 }
